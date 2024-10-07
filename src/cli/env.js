@@ -11,7 +11,7 @@ const rssEnvVars = Object.keys(process.env)
 .map(key => {
   const name = key.slice(4); 
   const value = process.env[key];
-  return `RSS_${name}=${value}`;
+  return `${name}=${value}`;
 });
 
 
